@@ -1,0 +1,33 @@
+$color-primary: #000;
+$color-secondary: #eee;
+$color-accent: #fff;
+
+.note {
+  font-family: verdana;
+  box-sizing: border-box;
+  border: solid thin $color-secondary;
+  border-radius: 50%;
+  color: $color-secondary;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  margin: 0.2rem 0.1rem;
+  &--scale-note {
+    border: solid thin $color-primary;
+    color: $color-primary;
+  }
+  &--chord-note {
+    border: solid thick $color-primary;
+    color: $color-primary;
+    line-height: 2rem;
+    font-weight: bold;
+  }
+  &--root-note {
+    background-color: #000;
+    color: #fff;
+    line-height: 2rem;
+    font-weight: bold;
+  }
+}
